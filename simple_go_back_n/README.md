@@ -1,0 +1,1 @@
+Transmit data with a simple version of go-back n protocol through nEmulator which will randomly drop/delay packets. 

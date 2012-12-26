@@ -1,0 +1,1 @@
+A simple link state implementation involving 6 routers as specified in the assignment.

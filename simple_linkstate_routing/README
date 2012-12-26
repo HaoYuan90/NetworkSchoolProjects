@@ -1,0 +1,28 @@
+submission of CS456 Assignment3
+by student HaoYuan Jiang WatID 20371798
+
+*** This program is written in C ***
+
+Compiling this program:
+Make sure you are in the folder that contains the source code files and Makefile.
+Type "make" will compile router.
+
+Running this program:
+Router argument formats are in line with specifications in the assignment instruction pdf.
+
+Sample Execution:
+host1: ./nse-linux386 host2 9999
+host2: ./router 1 host1 9999 9991
+       ./router 2 host1 9999 9992
+       ./router 3 host1 9999 9993
+       ./router 4 host1 9999 9994
+       ./router 5 host1 9999 9995
+
+Testing:
+This program is tested in MC3007 with one PC(gl07) running the emulator while another(gl04) running the router. It is also tested in undergrad linux environment.
+
+Versions:
+GNU Make 3.81 ; gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5)
+
+Note:
+At the stage of receiving LSPDU/HELLO packets, the program terminates if no packets are received after for 2 seconds. This number can be modified. For more information, please read the source code section "receive packets"

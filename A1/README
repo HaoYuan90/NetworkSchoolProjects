@@ -1,0 +1,20 @@
+This is submission of CS456 Assignment1 
+by student HaoYuan Jiang WatID 20371798
+
+*** This program is written in Java ***
+
+To compile this program:
+Make sure you are in the folder that contains the 2 .java files and Makefile.
+Type "make" will compile both the server and the client.
+
+To run the server:
+Type "java server"
+A line will be printed to stdout showing the port number used for negotiation.
+
+To run the client:
+Type "java client <host name> <port number for negotiation> <message>"
+These 3 parameters are separated by space not including the <> sign.
+Server response message will be printed out.
+
+This program is tested in maclab MC3004 both on localhost
+and with one IMac running the client whilte another running the server.

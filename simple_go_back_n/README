@@ -1,0 +1,28 @@
+This is submission of CS456 Assignment2
+by student HaoYuan Jiang WatID 20371798
+
+*** This program is written in Java ***
+
+Compiling this program:
+Make sure you are in the folder that contains the source code files and Makefile.
+Type "make" will compile the sender, the receiver as well as packet class.
+
+Running this program:
+Sender and receiver argument formats are in line with specifications in the assignment instruction pdf.
+
+Sample Execution:
+host1: ./nEmulator-linux386 9991 host2 9994 9993 host3 9992 1 0.2 0
+host2: java receiver host1 9993 9994 output.txt
+host3: java sender host1 9991 9992 test.txt
+
+Testing:
+This program is tested in MC3007 both on localhost and with one PC(gl26) running the emulator while another(gl09) running the sender and receiver.
+It is also tested in undergrad linux environment.
+
+Versions: 
+GNU Make 3.81 ; java 1.6.0_24
+
+Note: 
+This program assumes EOT ack will never get loss. Loss of EOT ack will result in receiver and sender program not terminating and empty log files.
+If an acknowlegdement is delayed for too long in the network that the sender has already gone to next cycle of sequence number, error will occur. 
+
